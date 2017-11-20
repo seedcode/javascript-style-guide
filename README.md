@@ -917,8 +917,6 @@
 
   - Additional trailing comma: OK since we are not supporting anything before IE10:
 
-  > Edition 5 clarifies the fact that a trailing comma at the end of an ArrayInitialiser does not add to the length of the array. This is not a semantic change from Edition 3 but some implementations may have previously misinterpreted this.
-
     ```javascript
     // OK
     var hero = {
