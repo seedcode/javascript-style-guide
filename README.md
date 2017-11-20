@@ -14,7 +14,7 @@
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
   1. [Comparison Operators & Equality](#comparison-operators--equality)
-  1. [Blocks](#blocks)
+  1. [Blocks / Conditionals](#blocks)
   1. [Comments](#comments)
   1. [Whitespace](#whitespace)
   1. [Commas](#commas)
@@ -568,21 +568,25 @@
 
 ## Blocks
 
-  - Use braces with all multi-line blocks.
+  - Always use braces even with single line conditionals.
 
     ```javascript
     // bad
     if (test)
       return false;
 
-    // good
+    // bad
     if (test) return false;
 
     // good
     if (test) {
-      return false;
+        return false;
     }
+    ```
 
+  - Create new lines for function contents. Single line function declarations are harder to read.
+
+    ```javascript
     // bad
     function () { return false; }
 
@@ -592,7 +596,7 @@
     }
     ```
 
-  - If you're using multi-line blocks with `if` and `else`, put `else` on the same line as your
+  - If you're using multi-line blocks with `if` and `else`, put `else` below the line as your
     `if` block's closing brace.
 
     ```javascript
@@ -600,8 +604,7 @@
     if (test) {
       thing1();
       thing2();
-    }
-    else {
+    } else {
       thing3();
     }
 
@@ -609,7 +612,8 @@
     if (test) {
       thing1();
       thing2();
-    } else {
+    } 
+    else {
       thing3();
     }
     ```
