@@ -32,6 +32,12 @@
   1. [Resources](#resources)
   1. [License](#license)
 
+## General Tenets Of Coding
+  - **One source of truth**: Avoid similar functions and defining duplicate data structures in multiple places.
+
+  - **Small atomic functions**: When possible functions should work on an input output premise. Accepting optional parameters and returning the result of the function. Focusing at one thing at a time. Parent functions can execute many of these atomic functions to produce more complex results. This is in contrast to performing many operations in a function and / or mutating data in an already defined object. 
+
+
 ## Types
 
   - **Primitives**: When you access a primitive type you work directly on its value.
