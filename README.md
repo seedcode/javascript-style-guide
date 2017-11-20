@@ -1,4 +1,4 @@
-# SeedCode JavaScript Style Guide() {
+# SeedCode JavaScript Style Guide (Ever Evolving)
 
 *Based off of the original Airbnb style guide*
 
