@@ -35,7 +35,7 @@
 ## General Tenets Of Coding
   - **One source of truth**: Avoid similar functions and defining duplicate data structures in multiple places.
 
-  - **Small atomic functions**: When possible functions should work on an input output premise. Accepting optional parameters and returning the result of the function. Focusing at one thing at a time. Parent functions can execute many of these atomic functions to produce more complex results. This is in contrast to performing many operations in a function and / or mutating data in an already defined object. 
+  - **Small atomic functions**: When possible functions should work on an input output premise. Accepting optional parameters and returning the result of the function. Focusing at one thing at a time. Parent functions can execute many of these atomic functions to produce more complex results. This is in contrast to performing many operations in a function and / or mutating data in an already defined object.
 
 
 ## Types
@@ -256,6 +256,18 @@
       };
     }
     ```
+
+  - Passing anonymous functions as function parameters is OK, just make sure to format appropriately.
+
+  ```javascript
+  // bad
+  runFunction(firstParam, function(option1, option2) {console.log('Nope.')});
+
+  // good
+  runFunction(firstParam, function(option1, option2) {
+    console.log('Yup.');
+  });
+  ```
 
   - Never name a parameter `arguments`. This will take precedence over the `arguments` object that is given to every function scope.
 
@@ -618,7 +630,7 @@
     if (test) {
       thing1();
       thing2();
-    } 
+    }
     else {
       thing3();
     }
