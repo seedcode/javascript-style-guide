@@ -28,7 +28,7 @@
 
   - **Header**
   
-  ```Title and version number
+  '''Title and version number
   The header should start with a title of the custom action and the current version number
   
   '''Description of function
@@ -52,7 +52,7 @@
   
   '''Do Not Edit notification
   All code that should not need to be edited by the user should be clearly marked with the following comment:
-  //You shouldn't need to edit below this line
+  //----------- You shouldn’t need to edit below this line -------------------
   
   Anything after that line should not need to be edited by the user
 
