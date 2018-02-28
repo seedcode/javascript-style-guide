@@ -29,16 +29,40 @@
   - **Header**
   
   '''Title and version number
-  The header should start with a title of the custom action and the current version number
+  The header should start with a title of the custom action and the current version number.  
   
   '''Description of function
-  Below the title, enter a description in laymans terms, that explains exactly what the function accomplishes
+  Below the title, enter a description in laymans terms, that explains exactly what the function accomplishes. This should contain a Purpose, Action Type, and Link to docs.
   
-  //Send Email to Support v1.0
+  Example 1:
+  
+  //Validate Field Entry v1.2
+  
+  //Purpose:
   //This function will send an email to support with the following details:
   //Email To - support@seedcode.com
   //Subject - Event Title
   //Body - Event description
+  
+  //Action Type: Custom Action
+  //Open in new window: no
+  
+  //More info on custom actions here:
+  //https://www.seedcode.com/pmwiki/index.php?n=DayBackOnline.CustomActions
+  
+  Example 2:
+
+  //Validate Field Entry v1.2
+
+  //Purpose:
+  //Verifies that specified additional fields have a value entered
+  //Prevents saving the event if the specified additional field's value is empty
+
+  //Action Type: Before Event Save
+  //Prevent Default Action: Yes
+
+  //More info on Before Event Save actions and objects here:
+  //https://www.seedcode.com/pmwiki/index.php?n=DayBackOnline.CustomActionObjects#BeforeSave
 
 **[⬆ back to top](#table-of-contents)**
 
