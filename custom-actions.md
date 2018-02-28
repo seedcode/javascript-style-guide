@@ -25,13 +25,11 @@
   
 
 ## Header
-
-  - **Header**
   
-  ###### Title and version number
+  - **Title and version number**
   The header should start with a title of the custom action and the current version number.  
   
-  ###### Description of function
+  - **Description of function**
   Below the title, enter a description in laymans terms, that explains exactly what the function accomplishes. This should contain a Purpose, Action Type, and Link to docs.
   
   
@@ -70,13 +68,12 @@
 
 ## Comments
 
-  - **Comments**
   Comments should explain the purpose of each function, as well as the variables used and which ones should be modified.
   
-  ###### User editable section
+  - **User editable section**
   Anything that needs to be edited by the user should be set in variables at the top of the main function.
   
-  ###### Do Not Edit notification
+  - **Do Not Edit notification**
   All code that should not need to be edited by the user should be clearly marked with the following comment:
   //----------- You shouldn’t need to edit below this line -------------------
   
@@ -88,7 +85,6 @@
 
 ## Variables
 
-  - **Variables**
   Variables that may need to be edited by the user should be declared at the top of the main function in their own commented section
   
   After declaring user editable variables, declare any additional necessary variables below the "Do Not Edit" notification.
@@ -99,7 +95,6 @@
 
 ## Links
 
-  - **Links**
   All DayBack functions used in the custom action should have comments referring to links in the docs that describe the function.
 
 
