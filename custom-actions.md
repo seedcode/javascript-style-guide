@@ -71,9 +71,11 @@
   Comments should explain the purpose of each function, as well as the variables used and which ones should be modified.
   
   - **User editable section**
+  
   Anything that needs to be edited by the user should be set in variables at the top of the main function.
   
   - **Do Not Edit notification**
+  
   All code that should not need to be edited by the user should be clearly marked with the following comment:
   //----------- You shouldn’t need to edit below this line -------------------
   
