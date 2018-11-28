@@ -36,7 +36,7 @@
   ###### Example 1:
   
     //Validate Field Entry v1.2
-  
+
     //Purpose:
     //This function will send an email to support with the following details:
     //Email To - support@seedcode.com
